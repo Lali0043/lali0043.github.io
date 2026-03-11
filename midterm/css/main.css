@@ -28,7 +28,7 @@ header h1{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:#ff4500; /* bright orange title */
+    color:#ff4500; /* bright green title */
     font-size:50px;
     font-weight:bold;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* optional shadow */
@@ -134,4 +134,5 @@ footer{
     font-size:14px;
     background-color:#6a5acd; /* matches nav */
     color:#ffffff;
+
 }
