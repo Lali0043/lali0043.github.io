@@ -28,7 +28,7 @@ header h1{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:#ff4500; /* bright green title */
+    color:#ff4500; /* bright orange title */
     font-size:50px;
     font-weight:bold;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* optional shadow */
@@ -136,3 +136,4 @@ footer{
     color:#ffffff;
 
 }
+
