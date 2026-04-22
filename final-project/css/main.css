@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav a:hover {
+    background: #c68a00;
+    color: #000;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 6px;
+}
+
+.search button {
+    background: #c68a00;
+    border: none;
+    padding: 6px 10px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 25px;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #c68a00;
+    color: #000;
+    text-decoration: none;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    display: flex;
+}
+
+.about-image img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 50%;
+    background: #ffe1a8;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ================= SERVICES ================= */
+.services {
+    padding: 50px 20px;
+}
+
+.services-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* FIRST ROW = 2 SERVICES */
+.services-container:first-of-type {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+/* SECOND ROW = 3 SERVICES */
+.services-container:last-of-type {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service {
+    background: #ffe1a8;
+    padding-bottom: 10px;
+}
+
+.service img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service h3 {
+    padding: 10px;
+}
+
+.service p {
+    padding: 0 10px;
+}
+
+.service a {
+    display: block;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* ================= VISION ================= */
+.vision {
+    position: relative;
+    text-align: center;
+}
+
+.vision img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.vision-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.vision a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #222;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* ================= TEAM ================= */
+.team-member {
+    display: flex;
+    align-items: stretch;
+}
+
+.team-member img {
+    width: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-member div {
+    width: 50%;
+    background: #ffe1a8;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-member:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    display: flex;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background: #c68a00;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.location img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* ================= HOURS ================= */
+.hours {
+    padding: 40px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #ffe1a8;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #222;
+    color: #c68a00;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .services-container:first-of-type,
+    .services-container:last-of-type {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image img,
+    .about-text {
+        width: 100%;
+    }
+
+    .team-member {
+        flex-direction: column;
+    }
+
+    .team-member img,
+    .team-member div {
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+}
