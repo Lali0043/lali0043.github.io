@@ -1,332 +1,215 @@
-/* ================= RESET ================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Star Media</title>
 
-body {
-    font-family: Arial, sans-serif;
-    background: #e6e6e6;
-    color: #222;
-    line-height: 1.6;
-}
+    <!-- link your CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
 
-/* ================= HEADER ================= */
-.header {
-    background: #222;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
+<!-- ================= HEADER ================= -->
+<header class="header">
 
-.logo img {
-    width: 70px;
-}
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
 
-.nav ul {
-    display: flex;
-    list-style: none;
-}
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-.nav li {
-    margin: 0 10px;
-}
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <button>🔍</button>
+    </div>
 
-.nav a {
-    color: #f5c542;
-    text-decoration: none;
-    padding: 10px 15px;
-}
+</header>
 
-.nav a:hover {
-    background: #f5c542;
-    color: #000;
-}
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <img src="images/main-banner.jpg" alt="hero">
 
-.search input {
-    padding: 6px;
-}
+    <div class="hero-content">
+        <h1>Welcome to Three Star Media</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Connect with us</a>
+    </div>
+</section>
 
-.search button {
-    background: #f5c542;
-    border: none;
-    padding: 6px 10px;
-    cursor: pointer;
-}
+<!-- ================= MAIN ================= -->
+<main>
 
-/* ================= HERO ================= */
-.hero {
-    position: relative;
-}
+    <!-- ABOUT -->
+    <section class="about">
 
-.hero img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
+        <div class="about-image">
+            <img src="images/about-us.jpg" alt="About image">
+        </div>
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    padding: 30px;
-    color: #fff;
-    max-width: 500px;
-}
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
+    </section>
 
-.btn {
-    display: inline-block;
-    background: #f5c542;
-    color: #000;
-    padding: 12px 20px;
-    margin-top: 15px;
-    text-decoration: none;
-}
+    <!-- SERVICES -->
+    <section class="services">
 
-/* ================= ABOUT ================= */
-.about {
-    display: flex;
-    padding: 40px;
-    background: #e6c98f;
-    gap: 20px;
-}
+        <h2>Our Services</h2>
 
-.about-image {
-    flex: 1;
-}
+        <div class="services-container">
 
-.about-image img {
-    width: 100%;
-}
+            <article class="service">
+                <img src="images/digital.jpg" alt="">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Digital Plans</a>
+            </article>
 
-.about-text {
-    flex: 1;
-}
+            <article class="service">
+                <img src="images/marketing.jpg" alt="">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Marketing Plans</a>
+            </article>
 
-/* ================= SERVICES ================= */
-.services {
-    padding: 40px;
-}
+            <article class="service">
+                <img src="images/video.jpg" alt="">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Video Plans</a>
+            </article>
 
-.services h2 {
-    margin-bottom: 20px;
-}
+            <article class="service">
+                <img src="images/web.jpg" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Web Plans</a>
+            </article>
 
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-}
+            <article class="service">
+                <img src="images/print.jpg" alt="">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Print Plans</a>
+            </article>
 
-/* TOP ROW (2 services) */
-.service:nth-child(1),
-.service:nth-child(2) {
-    grid-column: span 3;
-}
+        </div>
+    </section>
 
-/* BOTTOM ROW (3 services) */
-.service:nth-child(3),
-.service:nth-child(4),
-.service:nth-child(5) {
-    grid-column: span 2;
-}
+    <!-- VISION -->
+    <section class="vision">
+        <h2>Our Vision</h2>
+        <img src="images/vision.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Learn More</a>
+    </section>
 
-.service {
-    background: #e6c98f;
-}
+    <!-- TEAM -->
+    <section class="team">
+    <h2>Our Team</h2>
 
-.service img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+    <!-- JOHN -->
+    <article class="team-member">
+        <img src="images/john.jpg" alt="John Doe">
 
-.service h3 {
-    padding: 10px;
-}
+        <div class="team-text">
+            <h3>John Doe</h3>
+            <p><strong>CEO and Co-owner</strong></p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique.
+                Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.
+            </p>
+        </div>
+    </article>
 
-.service p {
-    padding: 0 10px 10px;
-}
+    <!-- BOB -->
+    <article class="team-member">
+        <img src="images/bob.jpg" alt="Bob Rite">
 
-.service a {
-    display: block;
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
+        <div class="team-text">
+            <h3>Bob Rite</h3>
+            <p><strong>CFO and Co-owner</strong></p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique.
+                Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.
+            </p>
+        </div>
+    </article>
 
-/* ================= VISION ================= */
-.vision {
-    background: url("images/vision.jpg") center/cover no-repeat;
-    color: white;
-    padding: 60px 40px;
-}
+</section>
 
-.vision a {
-    display: inline-block;
-    margin-top: 20px;
-    background: #0b2d4d;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-}
+    <!-- CONTACT -->
+    <section class="contact">
 
-/* ================= TEAM ================= */
-.team {
-    /* ================= TEAM ================= */
-.team {
-    padding: 40px;
-}
+        <h2>Contact Us</h2>
 
-.team h2 {
-    margin-bottom: 20px;
-}
+        <div class="contact-wrapper">
 
-/* each row */
-.team-member {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 20px;
-}
+            <div class="contact-form">
+                <h3>Send us a message</h3>
 
-/* images */
-.team-member img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+                <form>
+                    <label>Full Name</label>
+                    <input type="text">
 
-/* text box */
-.team-member div {
-    background: #e6c98f;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+                    <label>Email</label>
+                    <input type="email">
 
-/* JOHN (normal) */
-.team-member:nth-child(2) img {
-    order: 1;
-}
-.team-member:nth-child(2) div {
-    order: 2;
-}
+                    <label>Message</label>
+                    <textarea></textarea>
 
-/* BOB (reverse) */
-.team-member:nth-child(3) img {
-    order: 2;
-}
-.team-member:nth-child(3) div {
-    order: 1;
-}
-    padding: 40px;
-}
+                    <button type="submit">Send</button>
+                </form>
+            </div>
 
-.team-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+            <div class="location">
+                <h3>Location</h3>
+                <img src="images/location.jpg" alt="Map">
+            </div>
 
-/* JOHN */
-.team-member:first-child {
-    display: flex;
-}
+        </div>
 
-.team-member:first-child img {
-    width: 50%;
-}
+    </section>
 
-.team-member:first-child div {
-    background: #e6c98f;
-    padding: 20px;
-}
+    <!-- HOURS -->
+    <section class="hours">
+        <h2>Hours of operation</h2>
 
-/* BOB */
-.team-member:last-child {
-    display: flex;
-    flex-direction: row-reverse;
-}
+        <table>
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>Monday - Friday</td>
+                <td>9 AM - 6 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday - Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </section>
 
-.team-member:last-child img {
-    width: 50%;
-}
+</main>
 
-.team-member:last-child div {
-    background: #e6c98f;
-    padding: 20px;
-}
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© Copyright Three Star Media, 2020</p>
+    <p>All images are taken from Unsplash</p>
+</footer>
 
-/* ================= CONTACT ================= */
-.contact {
-    padding: 40px;
-}
-
-.contact-wrapper {
-    display: flex;
-    gap: 30px;
-}
-
-.contact-form {
-    flex: 1;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-.contact-form button {
-    background: #f5c542;
-    border: none;
-    padding: 8px 15px;
-}
-
-.location {
-    flex: 1;
-}
-
-.location img {
-    width: 50%;
-}
-
-/* ================= HOURS ================= */
-.hours {
-    padding: 40px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    background: #e6c98f;
-}
-
-td, th {
-    border: 1px solid #999;
-    padding: 10px;
-}
-
-/* ================= FOOTER ================= */
-.footer {
-    background: #222;
-    color: #f5c542;
-    padding: 20px;
-}
+</body>
+</html>
